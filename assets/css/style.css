@@ -17,22 +17,28 @@
 }
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 body {
     color: var(--PRIMARY-COLOR);
     font-family: var(--BODY-FONT) ;
     font-size: 2rem;
+    line-height: 1.4;
     
 }
 h1,h1,h3,h4,h5,h6 {
     font-family: var(--HEADING-FONT);
+    font-weight: 100;
 }
 h1 {
     font-size: 6rem;
     text-transform: uppercase;
 }
 h2 {
-    font-size: 5.5rem;
+   font-size: 6rem;
+    line-height: 1.1;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
 }
 h3 {
     font-size: 5rem;
@@ -48,6 +54,9 @@ h6 {font-size: 3.5rem ;}
 a {
     text-decoration: none;
 }
+p {
+    margin-bottom: 3rem;
+}
 .main-bg {
     color: var(--WHITE);
     background-image: url(../img/main-bg.svg);
@@ -56,6 +65,7 @@ a {
 }
 .white-bg {
     background-color: var(--WHITE);
+    color: var(--PRIMARY-COLOR);
 }
 .main-content {
     max-width: 1200px;
@@ -71,6 +81,7 @@ body section.first-section {
 }
 .menu {
     position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
     right: 0;
@@ -116,4 +127,66 @@ body section.first-section {
 .menu ul li a:hover::after {
     left: 25%;
     width: 50%;
+}
+.intro-content {
+    position: relative;
+    top: -7rem;
+    display: grid;
+    grid-auto-flow: row nowrap;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--GAP); 
+    align-items: center;   
+
+    height: 100vh;
+}
+
+.intro-img img {
+    max-width: 100%;
+    height: auto;
+}
+.top3-content {
+    text-align: center;
+    max-width: 70rem;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+.grid-one-content {
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+.grid-main-heading {
+    margin-bottom: 1rem;
+}
+.grid-description{
+    margin-bottom: 6rem;
+}
+
+ .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--GAP);
+    counter-reset: grid-counter;
+    
+ }
+ .grid h3 {
+    font-size: 3rem;
+    position: relative;
+    padding-left: 5rem;
+    padding-bottom: 2rem;
+ }
+
+.grid h3::before {
+    counter-increment: grid-counter;
+    content: counter(grid-counter) ;
+    position: absolute;
+    font-size: 8rem;
+    font-style: italic;
+    top: -4rem;
+    left: -0.5rem;
+    transform: rotate(3deg);
+
 }
