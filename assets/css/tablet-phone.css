@@ -1,0 +1,12 @@
+@media  (max-width: 800px) {
+    .intro-content, .grid {
+        grid-template-columns: 1fr;
+        
+    }
+    .intro-content img {
+        width: 90%;
+    }
+    .grid {
+        justify-items: center;
+    }
+}

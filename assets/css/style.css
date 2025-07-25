@@ -3,10 +3,11 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 :root {
-    --BODY-FONT: 'Montserrat', sans-serif;
-    --HEADING-FONT: 'Open Sans', sans-serif;
+    --BODY-FONT:'Open Sans', sans-serif;
+    --HEADING-FONT: 'Montserrat' , sans-serif;
 
     --PRIMARY-COLOR: #0A1128;
     --WHITE: #FFF;
@@ -28,7 +29,7 @@ body {
 }
 h1,h1,h3,h4,h5,h6 {
     font-family: var(--HEADING-FONT);
-    font-weight: 100;
+    font-weight: 900;
 }
 h1 {
     font-size: 6rem;
@@ -70,7 +71,7 @@ p {
 .main-content {
     max-width: 1200px;
     margin: 0 auto;
-    padding: var(--GAP);
+    padding: 4rem var(--GAP);
 }
 
 .section {
@@ -132,12 +133,12 @@ body section.first-section {
     position: relative;
     top: -7rem;
     display: grid;
-    grid-auto-flow: row nowrap;
+    grid-auto-flow: row wrap;
     grid-template-columns: 1fr 1.5fr;
     gap: var(--GAP); 
     align-items: center;   
 
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .intro-img img {
@@ -147,13 +148,13 @@ body section.first-section {
 .top3-content {
     text-align: center;
     max-width: 70rem;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
 }
 .grid-one-content {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -189,4 +190,111 @@ body section.first-section {
     left: -0.5rem;
     transform: rotate(3deg);
 
+}
+.gallery-img {
+    width: 100%;
+    max-width: 36rem;
+    max-height: 36rem;
+    overflow: hidden;
+}
+.gallery-img  img {
+    transition: all 400ms ease-in-out;
+
+
+}
+.gallery-img img:hover  {
+    transform: translate(-3%, 3%)scale(1.15) rotate(2deg);
+}
+.responsive-table {
+    overflow-x: auto;
+}
+table {
+    width: 100%;
+    min-width: 40rem;
+    border-collapse: collapse;
+
+}
+table caption {
+    text-align: left;
+    font-style: italic;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+td, th {
+    white-space: nowrap;
+    border: 0.1rem solid var(--LIGHT-GREY-LINE);
+    padding: 1rem;
+    text-align: left;
+}
+th {
+    background-color: var(--LIGHT-GREY-LINE);
+}
+tfoot td {
+    text-align: right;
+    background-color: var(--LIGHT-GREY-LINE);
+}
+.contact-form {
+    grid-column: span 2;
+}
+.contact-form .form-grid {
+    border: none;
+    display: flex;
+    flex-flow: row wrap;
+    gap: var(--GAP);
+}
+.form-grid legend {
+    font-style: italic;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+.form-group {
+    flex: 1 1 320px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 1rem;
+}
+.form-group input, textarea {
+    border: none;
+    background-color: var(--WHITE);
+    padding: 1.5rem 2rem;
+    width: 100%;
+    font-size: 2.5rem;
+    outline: none;
+
+}
+.form-group input:focus ,textarea:focus {
+    box-shadow: 1px 0px 10px 2px  var(--SECONDARY-COLOR);
+}
+body .full-width {
+    width: 100%;
+    flex: 1 1 100%;
+}
+button {
+    border: 0.5rem solid var(--WHITE);
+    background-color: transparent;
+    color: var(--WHITE);
+    padding: 1.5rem 2rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+}
+button:hover {
+
+    background-color: var(--WHITE);
+    color: var(--PRIMARY-COLOR);
+}
+.form-group ::placeholder {
+    color: var(--LIGHT-GREY-LINE);
+}
+#footer {
+    text-align: center;
+    font-size: 1.6rem;
+}
+footer a {
+    color: inherit;
+}
+footer p {
+    margin: 0;
+    padding: 2rem;
 }
