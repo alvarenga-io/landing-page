@@ -131,7 +131,6 @@ body section.first-section {
 }
 .intro-content {
     position: relative;
-    top: -7rem;
     display: grid;
     grid-auto-flow: row wrap;
     grid-template-columns: 1fr 1.5fr;
