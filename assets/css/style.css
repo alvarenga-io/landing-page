@@ -80,6 +80,9 @@ p {
 body section.first-section {
     padding-top: 8rem ;
 }
+.close-menu {
+    display: none;
+}
 .menu {
     position: fixed;
     z-index: 1;
@@ -269,7 +272,7 @@ body .full-width {
     width: 100%;
     flex: 1 1 100%;
 }
-button {
+.form-group button {
     border: 0.5rem solid var(--WHITE);
     background-color: transparent;
     color: var(--WHITE);
@@ -279,13 +282,28 @@ button {
     transition: all 400ms ease-in-out;
 }
 button:hover {
-
     background-color: var(--WHITE);
     color: var(--PRIMARY-COLOR);
 }
 .form-group ::placeholder {
     color: var(--LIGHT-GREY-LINE);
 }
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    font-size: 2rem;
+    color: var(--WHITE);
+    background-color: var(--PRIMARY-COLOR);
+    border-radius: 50%;
+    padding: 1rem;
+    transform: rotate(-90deg);
+    border: 0.1rem solid white;
+}
+.back-to-top a {
+    color: var(--WHITE);
+}
+
 #footer {
     text-align: center;
     font-size: 1.6rem;

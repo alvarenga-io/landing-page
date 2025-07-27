@@ -18,6 +18,7 @@
     }
     .menu {
         bottom: 0;
+        display: none;
     }
     .menu-content, .menu-content ul{
         flex-direction: column;
@@ -26,7 +27,33 @@
     }
     .menu-content {
         height: 100vh;
-   
-
+    }
+    .close-menu {
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;    
+    }
+    .menu-toggle::after {
+        content: '☰';
+        position: fixed;
+        z-index: 2;
+        top: 2rem;
+        right: 2rem;
+        font-size: 3rem;
+        text-align: center;
+        color: whitesmoke;
+        background-color:  #0A1128;
+        padding: 0.2rem .8rem;
+        border-radius: 0.3rem;
+        cursor: pointer;
+        
+    }
+    .close-menu:checked~.menu {
+        display: block;
+    }
+    .close-menu:checked~.menu-toggle::after {
+        content: '\2715';
+        font-weight: 600;
     }
 }
