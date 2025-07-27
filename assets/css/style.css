@@ -274,7 +274,7 @@ body .full-width {
     width: 100%;
     flex: 1 1 100%;
 }
-.form-group button {
+.form-grid button {
     border: 0.5rem solid var(--WHITE);
     background-color: transparent;
     color: var(--WHITE);
