@@ -1,4 +1,7 @@
 @media  (max-width: 800px) {
+    body {
+        font-size: 1.8rem;
+    }
     .intro-content, .grid {
         grid-template-columns: 1fr;
         
