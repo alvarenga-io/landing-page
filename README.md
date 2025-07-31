@@ -12,7 +12,6 @@ Praticar:
 ## 📷 Captura de tela
 ![preview](assets/img/landingpagePreview.png)
 
-## 🔗 Acesse o projeto
 [ visualizar o projeto.](https://alvarenga-io.github.io/landing-page)
 
 
