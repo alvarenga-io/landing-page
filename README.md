@@ -13,7 +13,7 @@ Praticar:
 ![preview](assets/img/landingpagePreview.png)
 
 ## 🔗 Acesse o projeto
-[ visualizar o projeto.]([https://seu-usuario.github.io/nome-do-repositorio/](https://alvarenga-io.github.io/landing-page))
+[ visualizar o projeto.](https://alvarenga-io.github.io/landing-page)
 
-*first landing page
+
 
