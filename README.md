@@ -1,4 +1,4 @@
-# Landing Page - Projeto de Estudo
+# Landing Page 
 
 Este é um dos meus primeiros projetos de landing page, desenvolvido para praticar os novos conceitos que aprendi de CSS. Na estrutura foram utilizados textos fictícios para garantir o foco na organização visual.
 
@@ -12,7 +12,7 @@ Praticar:
 ## Captura de tela
 ![preview](assets/img/landingpagePreview.png)
 
-[ visualizar o projeto.](https://alvarenga-io.github.io/landing-page)
+📁 [ visualizar o projeto.](https://alvarenga-io.github.io/landing-page)
 
 
 
